@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="addConstraintScreen" disable="false" prefHeight="284.0" prefWidth="574.0" visible="true" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+      <Button fx:id="okButton" defaultButton="true" layoutX="461.0" layoutY="243.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="103.0" text="Ok" />
+      <TextArea fx:id="textAbout" editable="false" layoutX="8.0" layoutY="8.0" prefHeight="229.0" prefWidth="556.0" />
+   </children>
+ </Pane>

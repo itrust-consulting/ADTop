@@ -1,0 +1,44 @@
+<?xml version='1.0'?>
+<adtree>
+	<node refinement="disjunctive">
+		<label>Get
+clear data
+on server</label>
+		<node refinement="conjunctive">
+			<label>Steal device
+with remote access</label>
+			<node refinement="conjunctive">
+				<label>Locate
+device</label>
+				<node refinement="conjunctive">
+					<label>Identify privileged user</label>
+					<parameter domainId="ProbSucc1" category="basic">0.25</parameter>
+				</node>
+				<node refinement="conjunctive">
+					<label>Spy</label>
+					<parameter domainId="ProbSucc1" category="basic">0.5</parameter>
+				</node>
+			</node>
+			<node refinement="conjunctive">
+				<label>Steal device</label>
+				<parameter domainId="ProbSucc1" category="basic">0.25</parameter>
+			</node>
+		</node>
+		<node refinement="conjunctive">
+			<label>Physical
+attack</label>
+			<node refinement="conjunctive">
+				<label>Break into premises</label>
+				<parameter domainId="ProbSucc1" category="basic">0.75</parameter>
+			</node>
+			<node refinement="conjunctive">
+				<label>Steal server</label>
+				<parameter domainId="ProbSucc1" category="basic">0.25</parameter>
+			</node>
+		</node>
+	</node>
+	<domain id="ProbSucc1">
+		<class>lu.uni.adtool.domains.adtpredefined.ProbSucc</class>
+		<tool>ADTool2</tool>
+	</domain>
+</adtree>

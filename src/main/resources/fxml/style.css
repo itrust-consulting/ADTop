@@ -1,0 +1,7 @@
+.menu-item:disabled, .menu-item:disabled > * {
+  -fx-opacity: 0.62 ;
+}
+
+.defenceItem{
+	-fx-opacity:0,62;
+}

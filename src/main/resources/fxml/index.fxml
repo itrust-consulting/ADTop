@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<GridPane fx:id="indexScreen" disable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="1000.0" visible="true" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lu.itrust.adtop.controller.IndexController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints />
+    <RowConstraints maxHeight="189.0" minHeight="0.0" prefHeight="31.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="554.0" minHeight="10.0" prefHeight="515.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="554.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <fx:include fx:id="menu" source="menu.fxml" />
+      <fx:include fx:id="main" source="main.fxml" />
+      <Text fx:id="copyright" strokeType="OUTSIDE" strokeWidth="0.0" text="Copyright 2016 itrust consulting" textAlignment="CENTER" wrappingWidth="1001.138671875" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets top="10.0" />
+         </GridPane.margin></Text>
+   </children>
+</GridPane>

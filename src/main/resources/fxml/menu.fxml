@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.layout.GridPane?>
+
+<MenuBar disable="false" prefHeight="31.0" prefWidth="1109.0" visible="true" GridPane.rowIndex="1" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lu.itrust.adtop.controller.MenuController">
+        <menus>
+          <Menu fx:id="fileMenu" mnemonicParsing="false" text="File">
+            <items>
+            <Menu fx:id="importMenu" mnemonicParsing="false" text="Import">
+              <items>
+                          <MenuItem fx:id="importAttackDefenceTree" disable="false" mnemonicParsing="false" text="Attack-Defence Tree (XML)" />
+                        <MenuItem fx:id="importExtractRAJSON" mnemonicParsing="false" text="Extract of Risk Analysis (JSON)" />
+                          <MenuItem fx:id="importExtractRATRICK" mnemonicParsing="false" text="Extract of Risk Analysis (TRICK Service)" />
+                  <MenuItem fx:id="importAssociationMatrix" disable="true" mnemonicParsing="false" text="Association Matrix (XLS)" />
+                        <MenuItem fx:id="importDL" disable="true" mnemonicParsing="false" text="Defence Library" visible="false" />
+              </items>
+            </Menu>
+            <Menu fx:id="exportMenu" mnemonicParsing="false" text="Export">
+              <items>
+                <MenuItem fx:id="exportAssociationMatrix" disable="true" mnemonicParsing="false" text="Association Matrix (XLS)" />
+                  <MenuItem fx:id="exportADT" disable="true" mnemonicParsing="false" text="Attack-Defence Tree (XML)" />
+                  <MenuItem fx:id="exportRRF" disable="true" mnemonicParsing="false" text="Risk Reduction Factors (JSON)" />
+              </items>
+            </Menu>
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem fx:id="exit" mnemonicParsing="false" text="Exit" />
+            </items>
+          </Menu>
+      <Menu fx:id="generateMenu" mnemonicParsing="false" text="Generate">
+        <items>
+            <MenuItem fx:id="generateAttackDefenceTree" disable="true" mnemonicParsing="false" text="Attack-Defence Tree" />
+        </items>
+      </Menu>
+      <Menu fx:id="evaluateMenu" mnemonicParsing="false" text="Evaluate">
+        <items>
+                          <MenuItem fx:id="findOptimalAttackDefenceTree" disable="true" mnemonicParsing="false" text="Find optimal Attack-Defence Tree" />
+        </items>
+      </Menu>
+          <Menu fx:id="helpMenu" mnemonicParsing="false" text="Help">
+            <items>
+            <MenuItem fx:id="helpAboutADTop" mnemonicParsing="false" text="About ADTop" />
+            <MenuItem fx:id="helpGetStarted" mnemonicParsing="false" text="Get Started" />
+              
+            
+              <Menu fx:id="languageMenu" mnemonicParsing="false" text="Language">
+              <items>
+              			<MenuItem fx:id="languageEN" mnemonicParsing="false" text="English" />
+                        <MenuItem fx:id="languageFR" mnemonicParsing="false" text="French" />   
+              </items>
+            </Menu>
+            
+            
+            
+            
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
