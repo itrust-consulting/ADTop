@@ -36,10 +36,4 @@ BRANCHES
 Master and development (merged) final delivered version
 addCost (with some additional features like adding and editing costs.)
 
-
-You can contact me by ersagunyalcintepe@gmail.com or 0033652494860 if you need help.
-
-Best regards,
-
-Ersagun Yalcintepe
-MSc, MBI/ Distributed Information Systems student
+For further information, please contact itrust consulting at https://www.itrust.lu or 0035226176212.
