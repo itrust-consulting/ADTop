@@ -2,11 +2,19 @@
 
 <!--- TODO: Add description as introduction, papers --->
 
+## Dependencies
+
+* Java JDK 8u92
+* Scene Builder
+* Any IDE like for e.g. [eclipse](https://eclipse.org/ide/)
+
 ## Installation
 
-### Dependencies
-To be able to contribute to development, you need to install, eclipse or
-another IDE.
+ADTop is build as Maven project which makes it easier to install the project.
+
+
+
+
 You need java JDK 8u92 or later version.
 
 ADTop is a Maven project, when you pull the project, you need to update project
@@ -41,4 +49,7 @@ BRANCHES
 Master and development (merged) final delivered version
 addCost (with some additional features like adding and editing costs.)
 
-For further information, please contact itrust consulting at https://www.itrust.lu or 0035226176212.
+## Further information
+
+Additionally, interested parties can contact [itrust consulting](https://www.itrust.lu)
+or call `0035226176212` for further information information.
