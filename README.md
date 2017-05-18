@@ -5,6 +5,7 @@
 ## Dependencies
 
 * Java JDK 8u92
+* Maven
 * Scene Builder
 * Any IDE like for e.g. [eclipse](https://eclipse.org/ide/)
 
