@@ -4,22 +4,40 @@
 
 ## Dependencies
 
-* Java JDK 8u92
+* Java JDK 8u92 or later
 * Maven
 * Scene Builder
 * Any IDE like for e.g. [eclipse](https://eclipse.org/ide/)
 
-## Installation
+## Installation and Execution
 
 ADTop is build as Maven project which makes it easier to install the project.
+Depending on the choice, it following two paths can be taken to build the project.
+
+### Command-line based
+
+After cloning or downloading the repository, in the terminal, execute ```mvn package```
+to build the project
+
+This should give a build successful message. Furthermore, the `package` goal of maven
+also executes all the tests within the project. Implementing of tests is in-progress.
+
+Finally, the generated
+java -cp target/my-app-1.0-SNAPSHOT.jar com.mycompany.app.App
+
+### IDE based
+
+Import the project in your favorite IDE and do a clean build. Following this one can do a direct `run` to execute it.
 
 
+### Generating Executable
+
+To make a executable `Jar` file for the project, execute a `mvn clean install` or generate Jar using the `maven clean install` option.
 
 
-You need java JDK 8u92 or later version.
+### Execution
 
-ADTop is a Maven project, when you pull the project, you need to update project
-and clean it.
+##
 
 ADTop user Java FX that's why you need a software to create future screen in
 FXML. You can user Scene Builder.
