@@ -22,8 +22,6 @@ to build the project
 This should give a build successful message. Furthermore, the `package` goal of maven
 also executes all the tests within the project. Implementing of tests is in-progress.
 
-Finally, the generated
-java -cp target/my-app-1.0-SNAPSHOT.jar com.mycompany.app.App
 
 ### IDE based
 
@@ -34,13 +32,18 @@ Import the project in your favorite IDE and do a clean build. Following this one
 
 To make a executable `Jar` file for the project, execute a `mvn clean install` or generate Jar using the `maven clean install` option.
 
-
 ### Execution
 
-##
+If the build is successful, then the compiled .jar file can be found within the
+`target\` folder. Just execute the .jar file and ADTop is up and running.
 
-ADTop user Java FX that's why you need a software to create future screen in
-FXML. You can user Scene Builder.
+## Screenshoots
+
+TODO: Add couple of screenshots with tutorials/examples
+
+## Development information
+
+ADTop user Java FX which is required to create future screen in FXML. This is the reason Scene Builder is one of the dependency of the project.
 
 Class gui charge index FXML file created via Scene builder. This FXML file is
 connected to Index controller. Index controller contains other controllers.
@@ -56,17 +59,10 @@ Apache POI is used to import export Association Matrix.
 Apache XML is used to parse XML. (ADT is bidirectionnal object, that's why Tree
 is parsed manually)
 
+java -cp target/my-app-1.0-SNAPSHOT.jar com.mycompany.app.App
 
+## License
 
-Execution: You can simply pull the project download dependencies via maven download
-dependencies menu (right click on project).
-
-Generate JAR : you can generate a Jar via maven clean install menu.
-
-BRANCHES
-
-Master and development (merged) final delivered version
-addCost (with some additional features like adding and editing costs.)
 
 ## Further information
 

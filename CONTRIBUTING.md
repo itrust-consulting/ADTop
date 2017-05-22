@@ -7,5 +7,5 @@ changes are confirmed.
 Kindly note, that when submitting PR the commits are named correctly with brief
 description of its purpose mentioned in the PR.
 
-You are also encourages to open an issue related to general issues, suggestions and
+You are also encouraged to open an issue related to general issues, suggestions and
 improvements.
