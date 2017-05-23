@@ -7,7 +7,7 @@
 * Java JDK 8u92 or later
 * Maven
 * Scene Builder
-* Any IDE like for e.g. [eclipse](https://eclipse.org/ide/)
+* (Optionally) Any IDE like for e.g. [eclipse](https://eclipse.org/ide/)
 
 ## Installation and Execution
 
@@ -16,26 +16,25 @@ Depending on the choice, it following two paths can be taken to build the projec
 
 ### Command-line based
 
-After cloning or downloading the repository, in the terminal, execute ```mvn package```
-to build the project
+After cloning or downloading the repository, in the terminal, execute ```mvn package -Dmaven.test.skip=true```
+to build the project. We use the additionally argument to skip the tests that are in-progress.
 
-This should give a build successful message. Furthermore, the `package` goal of maven
-also executes all the tests within the project. Implementing of tests is in-progress.
-
+Once all the tests have been implemented using simple `mvn package` would sucessfully build it. The `package` goal of maven
+also executes all the tests within the project.
 
 ### IDE based
 
 Import the project in your favorite IDE and do a clean build. Following this one can do a direct `run` to execute it.
 
-
-### Generating Executable
-
-To make a executable `Jar` file for the project, execute a `mvn clean install` or generate Jar using the `maven clean install` option.
-
 ### Execution
 
 If the build is successful, then the compiled .jar file can be found within the
 `target\` folder. Just execute the .jar file and ADTop is up and running.
+
+For Linux based distribution the run the .jar file use the following command:
+```
+java -jar adtop.jar
+```
 
 ## Screenshoots
 

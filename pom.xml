@@ -23,6 +23,13 @@
 				</configuration>
 			</plugin>
 
+			<!-- Maven Sunfire plugin -->
+
+			<plugin>
+				<groupID>org.apache.maven.plugins</groupID>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.19.1</version>
+			</plugin>
 
 			<!-- MAVEN ASSEMBLY -->
 			<plugin>
@@ -38,6 +45,8 @@
 					</descriptorRefs>
 				</configuration>
 			</plugin>
+
+
 		</plugins>
 
 
@@ -115,17 +124,16 @@
     <artifactId>jackson-databind</artifactId>
     <version>2.7.4</version>
 </dependency>
-<!-- http://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations -->
 
-<!-- Missing dependency --SGH -->
+<!-- https://mvnrepository.com/artifact/junit/junit -->
 <dependency>
-		<groupID>juint</groupID>
+		<groupID>junit</groupID>
 		<artifactId>junit</artifactId>
 		<version>4.11</version>
 		<scope>test</scope>
 </dependency>
 
-
+<!-- http://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations -->
 <dependency>
     <groupId>com.fasterxml.jackson.core</groupId>
     <artifactId>jackson-annotations</artifactId>
