@@ -22,14 +22,12 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>2.19.1</version>
+        </plugin>
 
-			<!-- Maven Sunfire plugin -->
-
-			<plugin>
-				<groupID>org.apache.maven.plugins</groupID>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.19.1</version>
-			</plugin>
 
 			<!-- MAVEN ASSEMBLY -->
 			<plugin>
@@ -45,10 +43,7 @@
 					</descriptorRefs>
 				</configuration>
 			</plugin>
-
-
 		</plugins>
-
 
 		<pluginManagement>
 			<plugins>
@@ -125,12 +120,12 @@
     <version>2.7.4</version>
 </dependency>
 
-<!-- https://mvnrepository.com/artifact/junit/junit -->
+<!-- Adding the missing dependency -SGH -->
+
 <dependency>
-		<groupID>junit</groupID>
-		<artifactId>junit</artifactId>
-		<version>4.11</version>
-		<scope>test</scope>
+  <groupId>junit</groupId>
+  <artifactId>junit</artifactId>
+  <version>4.11</version>
 </dependency>
 
 <!-- http://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations -->
