@@ -40,9 +40,9 @@ java -jar adtop-0.0.1-SNAPSHOT-jar-with-dependencies.jar
 
 ## Screenshots
 
-![Main view of the ADTop](ADTop/img/main.png)
+![Main view of the ADTop](/img/main.jpg)
 
-![Example in ADTop](ADTop/img/example.png)
+![Example in ADTop](/img/example.jpg)
 
 ## Development information
 
