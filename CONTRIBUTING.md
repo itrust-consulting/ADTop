@@ -2,10 +2,10 @@
 
 Contributing from interested people are always welcome!
 
-We highly encourage users to make fork from the repository and submit PR when
+We highly encourage users to make fork from the repository and submit pull request (PR) when
 changes are confirmed.
-Kindly note, that when submitting PR the commits are named correctly with brief
-description of its purpose mentioned in the PR.
+Kindly note, that when submitting PR, the commits are named correctly with brief
+description of their purpose.
 
-You are also encouraged to open an issue related to general issues, suggestions and
-improvements.
+We also encourage you to open an issue for any general issue, suggestion, or
+improvement.
