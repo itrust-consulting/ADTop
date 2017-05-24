@@ -6,6 +6,7 @@
 
 * Java JDK 8u92 or later
 * Maven
+* JavaFX/OpenJFX
 * Scene Builder
 * (Optionally) Any IDE like for e.g. [eclipse](https://eclipse.org/ide/)
 
@@ -19,7 +20,7 @@ Depending on the choice, it following two paths can be taken to build the projec
 After cloning or downloading the repository, in the terminal, execute ```mvn package -Dmaven.test.skip=true```
 to build the project. We use the additionally argument to skip the tests that are in-progress.
 
-Once all the tests have been implemented using simple `mvn package` would sucessfully build it. The `package` goal of maven
+Once all the tests have been implemented using simple `mvn package` would successfully build it. The `package` goal of maven
 also executes all the tests within the project.
 
 ### IDE based
@@ -36,7 +37,7 @@ For Linux based distribution the run the .jar file use the following command:
 java -jar adtop.jar
 ```
 
-## Screenshoots
+## Screenshots
 
 TODO: Add couple of screenshots with tutorials/examples
 
