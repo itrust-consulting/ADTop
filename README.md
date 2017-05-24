@@ -39,11 +39,13 @@ java -jar adtop.jar
 
 ## Screenshots
 
+![Main view of the ADTop](https://github.com/Deadlyelder/ADTop/img/main.png)
 
-TODO: Add couple of screenshots with tutorials/examples
+![Example in ADTop](https://github.com/Deadlyelder/ADTop/img/example.png)
 
 ## Development information
 
+ADTop uses the JavaFX to create future screens in FXML. 
 ADTop user Java FX which is required to create future screen in FXML. This is the reason Scene Builder is one of the dependency of the project.
 
 Class gui charge index FXML file created via Scene builder. This FXML file is
