@@ -39,6 +39,7 @@ java -jar adtop.jar
 
 ## Screenshots
 
+
 TODO: Add couple of screenshots with tutorials/examples
 
 ## Development information
