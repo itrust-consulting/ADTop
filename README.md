@@ -1,39 +1,73 @@
-ADTop (Attack-Defence Tree optimizer)
+# ADTop (Attack-Defence Tree optimizer)
 
-To be able to contribute to development, you need to install, eclipse or 
-another IDE. 
-You need java JDK 8u92 or later version. 
+<!--- TODO: Add description as introduction, papers --->
 
-ADTop is a Maven project, when you pull the project, you need to update project 
-and clean it.
+## Dependencies
 
-ADTop user Java FX that's why you need a software to create future screen in 
-FXML. You can user Scene Builder. 
+* Java JDK 8u92 or later
+* Maven
+* JavaFX/OpenJFX
+* Scene Builder
+* (Optionally) Any IDE, e.g. [eclipse](https://eclipse.org/ide/)
 
-Class gui charge index FXML file created via Scene builder. This FXML file is 
-connected to Index controller. Index controller contains other controllers. 
-Java FX, FXML structure is nested application. You can access to attributs of 
-FXML file ex: button thanks to @FXML tag. Index controller is the principal 
-controller. It has a principal Attribute called Pack. This object contains all 
-models used in ADTop. Measure container, Attack-defence tree etc..
+## Installation and execution
 
-All models are in the model class. 
+ADTop is built as a Maven project which makes it easier to install the tool.
+Depending on users' preferences (command line or IDE), two paths can be taken to build the tool.
 
-Jackson is used to import export Measure container. 
-Apache POI is used to import export Association Matrix.
-Apache XML is used to parse XML. (ADT is bidirectionnal object, that's why Tree 
-is parsed manually)
+### Command-line based
 
+After cloning or downloading the repository, execute ```mvn package -Dmaven.test.skip=true``` in the terminal
+to build the project. (We use this argument to skip the tests that are currently in progress.)
 
+Once all the tests have been implemented, simply using `mvn package` should successfully build it. The `package` goal of maven
+also executes all the tests within the project.
 
-Execution: You can simply pull the project download dependencies via maven download
-dependencies menu (right click on project). 
+### IDE based
 
-Generate JAR : you can generate a Jar via maven clean install menu.
+Import the project in your favorite IDE and do a clean build. Following this, just do a direct `run` to execute it.
 
-BRANCHES
+### Execution
 
-Master and development (merged) final delivered version
-addCost (with some additional features like adding and editing costs.)
+If the build is successful, then the compiled `.jar` file can be found within the
+`target` folder. Just execute the .jar file and ADTop is up and running.
 
-For further information, please contact itrust consulting at https://www.itrust.lu or 0035226176212.
+For a Linux-based distribution, run the .jar file using the following command:
+
+```
+java -jar adtop-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+```
+
+## Screenshots
+
+![Main view of the ADTop](/img/main.jpg)
+
+![Example in ADTop](/img/example.jpg)
+
+## Development information
+
+ADTop uses JavaFX which is required to create screens in FXML.
+
+The class `GUI` does the indexing of the FXML file that is created via Scene builder.
+This FXML file is connected to Index controller which contains other controllers.
+FXML allows structuring as a nested application. The attributes of the FXML file
+can be accessed using the `@FXML` tags.
+
+The `Index` controller is the principal controller within the project with a principle attribute
+called `Pack`. It contains all the models used in ADTop, measure containers, attack-defense trees, etc.
+
+All the models used within the tool are in the `model class`.
+
+The `Jackson` package is used to import/export `Measure` container(s).
+
+`Apache POI` is used to import/export `Association Matrix` and `Apache XML` is used for parsing the XML.
+_Note_: ADT is a bidirectional object which is the reason for a tree to be parsed manually.
+
+## License
+
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+
+## Further information
+
+Additionally, interested parties can contact [itrust consulting](https://www.itrust.lu)
+or call `0035226176212` for further information.

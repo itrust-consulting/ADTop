@@ -22,6 +22,11 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>2.19.1</version>
+        </plugin>
 
 
 			<!-- MAVEN ASSEMBLY -->
@@ -39,7 +44,6 @@
 				</configuration>
 			</plugin>
 		</plugins>
-
 
 		<pluginManagement>
 			<plugins>
@@ -115,6 +119,15 @@
     <artifactId>jackson-databind</artifactId>
     <version>2.7.4</version>
 </dependency>
+
+<!-- Adding the missing dependency -SGH -->
+
+<dependency>
+  <groupId>junit</groupId>
+  <artifactId>junit</artifactId>
+  <version>4.11</version>
+</dependency>
+
 <!-- http://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations -->
 <dependency>
     <groupId>com.fasterxml.jackson.core</groupId>

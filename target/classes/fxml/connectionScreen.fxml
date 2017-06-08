@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<?import javafx.scene.layout.Pane?>
-
-<Pane fx:id="connectionScreen" prefHeight="445.0" prefWidth="734.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lu.itrust.adtop.controller.screen.ConnectionController">
-    <fx:include source="formScreen.fxml" fx:id="form"/>
-    <fx:include source="chooseCustomerScreen.fxml" fx:id="chooseCustomer"/>
- </Pane>
